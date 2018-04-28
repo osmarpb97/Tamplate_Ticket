@@ -1,0 +1,272 @@
+@font-face {
+  font-family: "FontAwesome";
+         src : 
+               url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"),
+               url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
+  }
+ .footer_css{
+    position: fixed;
+    bottom:0;
+    width:100%;
+    height:3vh;
+    color: white;
+    background-color: #00b5e4;
+    text-align: center;
+  }
+body{
+  background-color: #ffffff;
+}
+#time_container{
+  margin-bottom: 5vh;
+}
+#hg{
+  height: 100vh;
+  height: 100%;
+  width: 100%;
+}
+  
+.transparente {
+  background-color: rgb(0, 181, 228);
+  background: rgb(0, 181, 228);
+  border-color: transparent;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+#logo_nav{
+  margin-left: 10%;
+}
+
+.md-stepper-horizontal {
+	display:table;
+	width:100%;
+	margin:0 auto;
+	background-color:#FFFFFF;
+}
+.md-stepper-horizontal .md-step {
+	display:table-cell;
+	position:relative;
+	padding:24px;
+}
+.md-stepper-horizontal .md-step:hover,
+.md-stepper-horizontal .md-step:active {
+	background-color:rgba(0,0,0,0.04);
+}
+
+.md-stepper-horizontal .md-step:first-child:active {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.md-stepper-horizontal .md-step:last-child:active {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.md-stepper-horizontal .md-step:hover .md-step-circle {
+	background-color:#757575;
+}
+.md-stepper-horizontal .md-step:first-child .md-step-bar-left,
+.md-stepper-horizontal .md-step:last-child .md-step-bar-right {
+	display:none;
+}
+.md-stepper-horizontal .md-step .md-step-circle {
+	width:30px;
+	height:30px;
+	margin:0 auto;
+	background-color:#999999;
+	border-radius: 50%;
+	text-align: center;
+	line-height:30px;
+	font-size: 16px;
+	font-weight: 600;
+	color:#FFFFFF;
+}
+.md-stepper-horizontal.green .md-step.active .md-step-circle {
+	background-color:#00AE4D;
+}
+.md-stepper-horizontal.orange .md-step.active .md-step-circle {
+	background-color:#F96302;
+}
+.md-stepper-horizontal .md-step.active .md-step-circle {
+	background-color: rgb(33,150,243);
+}
+.md-stepper-horizontal .md-step.done .md-step-circle:before {
+	font-family:'FontAwesome';
+	font-weight:100;
+	content: "\f00c";
+}
+.md-stepper-horizontal .md-step.done .md-step-circle *,
+.md-stepper-horizontal .md-step.editable .md-step-circle * {
+	display:none;
+}
+.md-stepper-horizontal .md-step.editable .md-step-circle {
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
+.md-stepper-horizontal .md-step.editable .md-step-circle:before {
+	font-family:'FontAwesome';
+	font-weight:100;
+	content: "\f040";
+}
+.md-stepper-horizontal .md-step .md-step-title {
+	margin-top:16px;
+	font-size:16px;
+	font-weight:600;
+}
+.md-stepper-horizontal .md-step .md-step-title,
+.md-stepper-horizontal .md-step .md-step-optional {
+	text-align: center;
+	color:rgba(0,0,0,.26);
+}
+.md-stepper-horizontal .md-step.active .md-step-title {
+	font-weight: 600;
+	color:rgba(0,0,0,.87);
+}
+.md-stepper-horizontal .md-step.active.done .md-step-title,
+.md-stepper-horizontal .md-step.active.editable .md-step-title {
+	font-weight:600;
+}
+.md-stepper-horizontal .md-step .md-step-optional {
+	font-size:12px;
+}
+.md-stepper-horizontal .md-step.active .md-step-optional {
+	color:rgba(0,0,0,.54);
+}
+.md-stepper-horizontal .md-step .md-step-bar-left,
+.md-stepper-horizontal .md-step .md-step-bar-right {
+	position:absolute;
+	top:36px;
+	height:1px;
+	border-top:1px solid #DDDDDD;
+}
+.md-stepper-horizontal .md-step .md-step-bar-right {
+	right:0;
+	left:50%;
+	margin-left:20px;
+}
+.md-stepper-horizontal .md-step .md-step-bar-left {
+	left:0;
+	right:50%;
+	margin-right:20px;
+}
+@import url("https://fonts.googleapis.com/css?family=Droid+Sans+Mono|Fira+Sans");
+.timer-circle {
+  position: relative;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.circle-box {
+  pointer-events: none;
+}
+
+.semi-c {
+  position: absolute;
+  width: 100px;
+  height: 200px;
+  box-sizing: border-box;
+  border: solid 6px;
+}
+
+.left {
+  top: 0;
+  left: 0;
+  -webkit-transform-origin: right center;
+          transform-origin: right center;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-right: none;
+  z-index: 1;
+}
+
+.right {
+  top: 0;
+  left: 100px;
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-left: none;
+}
+
+.circle {
+  border-color: #4ea1d3;
+}
+
+.mask {
+  border-color: #e85a71;
+}
+
+.overlay-circle {
+  border-color: #e85a71;
+}
+
+.overlay-mask {
+  border-color: #4ea1d3;
+}
+
+.counter-box {
+  font-family: "Droid Sans Mono", monospace;
+  font-size: 250%;
+  display: flex;
+  justify-content: space-around;
+  color: #e85a71;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 90%;
+  margin: 0 10px;
+}
+
+.btn-elements, .btn-box {
+  display: inline-block;
+}
+
+h1 {
+  margin: 0 auto 10px auto;
+  color: #4ea1d3;
+}
+
+.message {
+  height: 20px;
+  margin: 10px auto 20px auto;
+}
+
+.btn-box p {
+  margin: 10px auto 0 auto;
+}
+
+button {
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  background: none;
+  outline: none;
+  color: #d8e9ef;
+}
+
+button:hover, .footer i:hover, .footer a:hover {
+  color: #90c0d1;
+}
+
+.reset-btn {
+  margin-top: 8px;
+  color: #4ea1d3;
+}
+
+
